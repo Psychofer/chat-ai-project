@@ -12,7 +12,11 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
         policy => policy
-            .WithOrigins("http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173", "https://chatfer-ai-app.vercel.app")
+            .WithOrigins(
+                "http://localhost:5173",
+                "http://localhost:3000",
+                "http://127.0.0.1:5173",
+                "https://chat-aii-app.vercel.app") // DOĞRU DOMAIN
             .AllowAnyMethod()
             .AllowAnyHeader()
             .AllowCredentials());
