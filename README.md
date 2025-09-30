@@ -91,8 +91,8 @@ Veritabanı modelleri - User ve Message entity'leri
 
 **Frontend (frontend/src/App.jsx)**
 
-State yönetimi - Kullanıcı bilgileri ve mesaj listesi
-Mesaj listeleme fonksiyonu - Backend'den mesajları çekme
+**State yönetimi* - Kullanıcı bilgileri ve mesaj listesi
+**Mesaj listeleme fonksiyonu* - Backend'den mesajları çekme
 Kullanıcı kaydı fonksiyonu - API çağrısı ve hata yönetimi
 Mesaj gönderme fonksiyonu - AI analizi tetikleme
 Duygu emoji ve renk fonksiyonları - UI görselleştirme
