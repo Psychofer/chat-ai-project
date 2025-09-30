@@ -1,20 +1,19 @@
-# Build aşaması
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+# Build aşaması (9.0 SDK)
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
-# Tüm dosyaları kopyala
+# Proje dosyalarını kopyala
 COPY . ./
 
 # Publish
 RUN dotnet publish -c Release -o out
 
-# Runtime aşaması
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
+# Runtime aşaması (9.0 runtime)
+FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 COPY --from=build /app/out .
 
-# Port aç
 EXPOSE 5000
 
-# Uygulamayı çalıştır
 ENTRYPOINT ["dotnet", "chat-backend.dll"]
+
