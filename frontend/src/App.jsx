@@ -3,7 +3,7 @@ import axios from 'axios';
 import './App.css';
 
 // Backend API URL'inizi buraya koyun
-const API_URL = 'https://chat-backend-49al.onrender.com/api';
+const API_URL = 'https://chat-backend-f8ky.onrender.com/api';
 
 function App() {
   const [username, setUsername] = useState('');
