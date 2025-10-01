@@ -300,6 +300,10 @@ app.MapGet("/api/messages", async (ChatDbContext db) =>
     return Results.Ok(messages);
 });
 
+// Render'ın PORT environment değişkenini oku
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+app.Urls.Add($"http://*:{port}");
+
 app.Run();
 
 // 📦 Veritabanı Modelleri

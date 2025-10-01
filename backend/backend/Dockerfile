@@ -15,8 +15,10 @@ WORKDIR /app
 # Build edilmiş dosyaları kopyala
 COPY --from=build /app/out .
 
-EXPOSE 5000
+# Render için container'ın dışa açacağı port
+EXPOSE 8080
 
 # DLL adını kesinlikle backend.dll olarak ayarla
 ENTRYPOINT ["dotnet", "backend.dll"]
+
 
