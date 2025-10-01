@@ -304,6 +304,9 @@ app.MapGet("/api/messages", async (ChatDbContext db) =>
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 app.Urls.Add($"http://*:{port}");
 
+app.MapGet("/", () => Results.Ok(new { message = "Chat backend çalışıyor! API endpoint: /api" }));
+
+
 app.Run();
 
 // 📦 Veritabanı Modelleri
