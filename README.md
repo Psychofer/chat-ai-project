@@ -56,7 +56,8 @@ chat-ai-project/
 - Web Uygulaması: https://chat-aii-app.vercel.app/
 - Backend API: https://chat-backend-f8ky.onrender.com
 - AI Servisi: https://huggingface.co/spaces/jaxfel/sentiment-analysis-turkish
-- React Native APK : [indir APK](https://github.com/Psychofer/chat-ai-project/releases/download/v1.0/app-release.apk)
+- React Native APK : https://github.com/Psychofer/chat-ai-project/releases/tag/v1.0
+
 
 ## 🤖 AI Araçları Kullanımı
 
